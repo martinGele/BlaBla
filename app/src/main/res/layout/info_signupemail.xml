@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background" >
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_img_height"
+        android:background="@drawable/header_signup" />
+
+    <RelativeLayout
+        android:id="@+id/myRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_img" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/signup_linear_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_twenty" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/gray_orange"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_ten" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_firstname_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:text="@string/first_name"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:maxLength="200"
+                            android:minHeight="50dp"
+                            android:padding="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_firstname_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_ten"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_lastname_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/last_name"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="200"
+                            android:minHeight="@dimen/margin_min_fifity"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_lastname_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_email_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:text="@string/EMAIL"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="200"
+                            android:minHeight="50dp"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_email_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_ten"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_password_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:text="@string/password_minimum"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:maxLength="200"
+                            android:minHeight="50dp"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_password_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_confirm_password_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:text="@string/CONFIRM_PASSWORD"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_confirm_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:maxLength="200"
+                            android:minHeight="50dp"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_confirm_password_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_ten"
+                        android:background="@color/whie_thref" >
+
+                        <RelativeLayout
+                            android:id="@+id/favMenuContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/margin_min_fifity"
+                                android:orientation="horizontal" >
+
+                                <RelativeLayout
+                                    android:id="@+id/spinnerContainer"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingRight="@dimen/padding_five" >
+
+                                    <TextView
+                                        android:id="@+id/signupspinnerPlaceholder"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:minHeight="@dimen/margin_min_fifity"
+                                        android:paddingLeft="@dimen/padding_five"
+                                        android:text="@string/favorit_menu_item" />
+
+                                    <TextView
+                                        android:id="@+id/signup_fav_menu_text_signup"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:minHeight="@dimen/margin_min_fifity"
+                                        android:paddingLeft="@dimen/padding_five" />
+                                    <!--
+                                     <Spinner
+                                    android:id="@+id/signup_fav_menu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="50dp"
+                                    android:background="@color/transparent"
+                                    android:prompt="@string/fav_menu_prompt" />
+
+
+
+
+
+
+
+                                    -->
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/locSpinnerBtnSignUp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/margin_top_ten"
+                                    android:minHeight="@dimen/margin_min_fifity"
+                                    android:src="@drawable/down_arrow" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_ten"
+                        android:background="@color/whie_thref" >
+
+                        <RelativeLayout
+                            android:id="@+id/layoutdob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textviewdob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:gravity="left|top"
+                                android:hint="@string/birthday_optional"
+                                android:minHeight="@dimen/margin_min_fifity"
+                                android:paddingLeft="@dimen/padding_five"
+                                android:paddingRight="@dimen/padding_five"
+                                android:singleLine="true"
+                                android:textColorHint="@color/main_background" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_ten"
+                        android:background="@color/whie_thref" >
+
+                        <RelativeLayout
+                            android:id="@+id/favoriteStore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textViewFavoriteStore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:gravity="left|top"
+                                android:hint="@string/favorite_store_optional"
+                                android:minHeight="@dimen/margin_min_fifity"
+                                android:paddingLeft="@dimen/padding_five"
+                                android:paddingRight="@dimen/padding_five"
+                                android:singleLine="true"
+                                android:textColorHint="@color/main_background" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_ten"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_Refercodeoptional_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:text="@string/referal_code_optional"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_Refercodeoptional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionDone"
+                            android:inputType="textNoSuggestions"
+                            android:maxLength="200"
+                            android:minHeight="@dimen/margin_min_fifity"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_Refercodeoptional_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mallEmployeeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:gravity="center|left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/signup_edit_mallemployee_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_five"
+                        android:paddingRight="@dimen/padding_five"
+                        android:text="@string/mall_employee"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        android:id="@+id/sugnup_edit_mallemployee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:button="@drawable/mall_employee_check" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/gray_orange"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_ten" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whie_thref" >
+
+                        <TextView
+                            android:id="@+id/signup_edit_retailer_hints"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:text="@string/retailer_optional"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/signup_edit_retailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionDone"
+                            android:inputType="textNoSuggestions"
+                            android:maxLength="200"
+                            android:minHeight="50dp"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:singleLine="true"
+                            android:tag="signup_edit_retailer_hints"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signup_image_signup_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_orange_selector"
+                    android:contentDescription="@string/imagecontent"
+                    android:padding="@dimen/padding_fifteen"
+                    android:text="@string/sign_up" />
+
+                <LinearLayout
+                    android:id="@+id/marketingOptionCBLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signup_image_signup"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_fifteen"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/marketingOptionCB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:button="@drawable/btn_check"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/optinText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/opt_in_for_emails"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

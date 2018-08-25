@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:orientation="horizontal"
+	    android:background="#fff"
+	    android:padding="10dp">
+	    
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="5dp"
+	        android:layout_weight="1"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/findzoes_list_text_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/eatatzoes"
+	            android:textColor="@color/main_background"
+	            android:textSize="14dp" />
+	
+	        <TextView
+	            android:id="@+id/findzoes_list_text_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:ellipsize="end"
+	            android:maxLines="2"
+	            android:text="@string/eatatzoes"
+	            android:textColor="@color/blue_color"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/findzoes_list_text_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:text="@string/eatatzoes"
+	            android:textColor="@color/blue_color"
+	            android:textSize="12dp"
+	            android:visibility="gone" />
+	
+	        <!-- <TextView
+	            android:id="@+id/findzoes_list_text_dist"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:text="@string/eatatzoes"
+	            android:textColor="@color/dark_grey_text"
+	            android:textSize="12dp" /> -->
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/layout_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout
+	            android:id="@+id/phone_image"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	
+	            <RelativeLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/locations_call"
+	                    android:visibility="invisible" />
+	
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:src="@drawable/locations_call" />
+	            </RelativeLayout>
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:id="@+id/map_image"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >
+	
+	            <RelativeLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" >
+	
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/locations_call"
+	                    android:visibility="invisible" />
+	
+	                <ImageView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:src="@drawable/locations_marker" />
+	            </RelativeLayout>
+	        </LinearLayout>        
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<View 
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+</LinearLayout>

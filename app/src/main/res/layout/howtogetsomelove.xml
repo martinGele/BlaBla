@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/howToUseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="How to Use the\nWetzel App"
+                android:textColor="@color/white"
+                android:textSize="15dp" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/home_tutorial_icon" />
+
+            <TextView
+                android:id="@+id/homeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Tap this icon to go to the home screen."
+                android:textColor="@color/white"
+                android:textSize="15dp" >
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/separateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/firstLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/separateDots"
+                    android:layout_alignRight="@+id/separateDots"
+                    android:layout_below="@+id/separateDots"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/myDoughText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="MY DOUGH"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/myDoughText"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/rewardsTutorialIcon"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/rewardsTutorialIcon"
+                            android:src="@drawable/arrow_tutorial" />
+
+                        <ImageView
+                            android:id="@+id/rewardsTutorialIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/rewards_tutorial_icon" />
+
+                        <TextView
+                            android:id="@+id/myDoughDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rewardsTutorialIcon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Tap this icon to see your Dough."
+                            android:textColor="@color/white"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/sliced_bread" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/myDoughLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/firstLayout"
+                    android:layout_alignRight="@+id/firstLayout"
+                    android:layout_below="@+id/firstLayout"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|right"
+                        android:src="@drawable/bread_tutorial" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:rotation="-40"
+                        android:src="@drawable/arrow_tutorial_to_left" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/myDoughFirstDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For each visit, you&apos;ll earn a piece of bread. After 7 pieces - a whole loaf - you&apos;ll earn your reward!"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/myDoughSecondDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Simply tap on the rewards listed below your Dough while in the restaurant and present it to your retailer or server."
+                            android:textColor="@color/white"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myDoughLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow_tutorial_to_left_bottom"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/rewardsButtonTutorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/brownie_tutorial" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|left"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/arrow_tutorial_to_left_bottom" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/secondSeparateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="AAAAAAAAAAAAAAAAAAAA"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                    -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/earnLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/secondSeparateDots"
+                    android:layout_alignRight="@+id/secondSeparateDots"
+                    android:layout_below="@+id/secondSeparateDots"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/earnDoughText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="EARN DOUGH"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/receipt_tutorial" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/barcode_tutorial" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/earnDoughDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Collect your Dough by presenting your barcode to a retailer to scan in store, or if you&apos;ve already paid, scan the barcode at the bottom of your check with your phone."
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/thirdSeparateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="AAAAAAAAAAAAAAAAAAAA"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                    -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/payLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/thirdSeparateDots"
+                    android:layout_alignRight="@+id/thirdSeparateDots"
+                    android:layout_below="@+id/thirdSeparateDots"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/payText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="PAY"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/pay_image_tutorial" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/dollar_tutorial" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/payDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Pay quickly at the counter"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/paymentSettingButtonLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|right"
+                                android:layout_marginRight="5dp"
+                                android:contentDescription="@string/imagecontent"
+                                android:src="@drawable/arrow_tutorial" />
+
+                            <ImageView
+                                android:id="@+id/paymentSettingButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/payment_button_tutorial" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/imagecontent"
+                                android:src="@drawable/arrow_tutorial"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/secondPayDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/paymentSettingButtonLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="@string/payment_desc"
+                            android:textColor="@color/white"
+                            android:textSize="15dp" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/noteDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/secondPayDesc"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Note that no credit card information\nis transferred during the scan."
+                            android:textColor="@color/white"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/fourthSeparateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="AAAAAAAAAAAAAAAAAAAA"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                    -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondPayLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fourthSeparateDots"
+                    android:layout_alignRight="@+id/fourthSeparateDots"
+                    android:layout_below="@+id/fourthSeparateDots"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/order_image_tutorial" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/knife_fork_tutorial" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/orderDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Find the closest Wetzel so you can get in touch with us, or order online for pickup."
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/secondOrderDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="When placing an online order, simply enter the phone number or email address associated with your Wetzel account."
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/thirdOrderDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="At the end of the day, your Dough will automatically be added to your account."
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/fifthSeparateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="AAAAAAAAAAAAAAAAAAAA"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                    -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/spreadLoveLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/fifthSeparateDots"
+                    android:layout_alignRight="@+id/fifthSeparateDots"
+                    android:layout_below="@+id/fifthSeparateDots"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/spread_love_tutorial" />
+
+                    <TextView
+                        android:id="@+id/spreadLoveDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Refer a friend via Facebook, Twitter, text or email. When your friends download the app and make their first purchase, you&apos;ll be one step closer to a tasty reward!"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/sixthSeparateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="AAAAAAAAAAAAAAAAAAAA"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                    -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/infoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/sixthSeparateDots"
+                    android:layout_alignRight="@+id/sixthSeparateDots"
+                    android:layout_below="@+id/sixthSeparateDots"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/info_tutorial" />
+
+                    <TextView
+                        android:id="@+id/firstInfoDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="Manage your account, learn more about Wetzel, connect with us online, spread the love, view our menus, redeem promo codes and provide feedback - all in one helpful place."
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/settingButtonLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/arrow_tutorial" />
+
+                            <ImageView
+                                android:id="@+id/settingButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top"
+                                android:src="@drawable/settings_tutorial" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/arrow_tutorial"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/secondInfoDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/settingButtonLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Click on the Settings icon to logout or reset your password."
+                            android:textColor="@color/white"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/seventhSeparateDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="AAAAAAAAAAAAAAAAAAAA"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" >
+                    </TextView>
+                    -->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/long_dots" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/buttonDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seventhSeparateDots"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/done_button" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

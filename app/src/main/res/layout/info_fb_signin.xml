@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_img_height"
+        android:background="@drawable/header_signup" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header_img"
+        android:layout_margin="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/loginoption_fb_linear_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_twenty">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#faa92e"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_ten">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff">
+
+                    <TextView
+                        android:id="@+id/loginoption_fb_edittext_firstname_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_five"
+                        android:paddingRight="@dimen/padding_five"
+                        android:text="@string/first_name"
+                        android:textColor="@color/main_background" />
+
+                    <EditText
+                        android:id="@+id/loginoption_fb_edittext_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLength="200"
+                        android:minHeight="@dimen/minimum_height_fifty"
+                        android:padding="@dimen/padding_five"
+                        android:paddingRight="@dimen/padding_five"
+                        android:singleLine="true"
+                        android:tag="loginoption_fb_edittext_firstname_hint"
+                        android:textCursorDrawable="@null" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:background="#fff">
+
+                    <RelativeLayout
+                        android:id="@+id/favMenuContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/minimum_height_fifty"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/spinnerContainer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingRight="@dimen/padding_five">
+
+                                <TextView
+                                    android:id="@+id/signupspinnerPlaceholder"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="@dimen/minimum_height_fifty"
+                                    android:paddingLeft="@dimen/padding_five"
+                                    android:text="@string/favorit_menu_item" />
+
+                                <TextView
+                                    android:id="@+id/signup_fav_menu_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="@dimen/minimum_height_fifty"
+                                    android:paddingLeft="@dimen/padding_five" />
+
+
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/locSpinnerBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/margin_top_ten"
+                                android:minHeight="@dimen/minimum_height_fifty"
+                                android:src="@drawable/down_arrow" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:background="#fff">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutdob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textviewdob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:gravity="left|top"
+                            android:hint="@string/birthday_optional"
+                            android:minHeight="@dimen/minimum_height_fifty"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:textColorHint="@color/main_background" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:background="#fff">
+
+                    <TextView
+                        android:id="@+id/loginoption_fb_edittext_refercode_hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_five"
+                        android:paddingRight="@dimen/padding_five"
+                        android:text="@string/Refercodeoptional"
+                        android:textColor="@color/main_background" />
+
+                    <EditText
+                        android:id="@+id/loginoption_fb_edittext_refercode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLength="200"
+                        android:minHeight="@dimen/minimum_height_fifty"
+                        android:paddingLeft="@dimen/padding_five"
+                        android:paddingRight="@dimen/padding_five"
+                        android:singleLine="true"
+                        android:tag="loginoption_fb_edittext_refercode_hint"
+                        android:textCursorDrawable="@null" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_five"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/loginoption_fb_image_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_blue_selector"
+                    android:contentDescription="@string/imagecontent"
+                    android:padding="15dp"
+                    android:text="@string/sign_up_using_fb" />
+
+                <LinearLayout
+                    android:id="@+id/marketingOptionCBLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginoption_fb_image_facebook"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/marketingOptionCB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:button="@drawable/btn_check"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/optinText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_top_ten"
+                        android:text="@string/by_providing_your_email_you_subscribe"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/loginoption_fb_text_tapbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/tapfbbutton"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

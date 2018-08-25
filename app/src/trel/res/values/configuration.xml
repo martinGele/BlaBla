@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APPLICATION_NAME">Wetzel\'s Pretzels_Trel</string>
+    <string name="APPKEY">7ceOKqUbYYvwNMLO</string>
+    <string name="BASE_URL">http://trelevant.herokuapp.com/api/v1</string>
+    <string name="BASE_URL_HTTPS">https://trelevant.herokuapp.com/api/v1</string>
+    <string name="BASE_URL_MOBILEPAY">http://fundy.relevantmobile.com:8090/mobilepay/api/v2</string>
+    <string name="BASE_URL_GIFTCARD">http://fundy.relevantmobile.com:8090/giftcard-rest/api/v1</string>
+    <string name="URL_TERMS_OF_USE">http://trelevant.herokuapp.com/terms_of_use?appkey=7ceOKqUbYYvwNMLO</string>
+    <string name="URL_PRIVACY_URL">http://trelevant.herokuapp.com/privacy_policy?appkey=7ceOKqUbYYvwNMLO</string>
+    <string name="URL_FB_PAGE">http://trelevant.herokuapp.com/url/36/facebook</string>
+    <string name="URL_TWITTER_PAGE">http://trelevant.herokuapp.com/url/36/twitter</string>
+    <string name="URL_ORDER_ONLINE">http://trelevant.herokuapp.com/url/19/veggie-grill-order-online</string>
+    <string name="URL_MENU_ONLINE">http://trelevant.herokuapp.com/url/36/menu</string>
+    <string name="URL_CALC_ONLINE">http://trelevant.herokuapp.com/url/24/nutritional-calculator-fire-house-subs</string>
+    <string name="URL_FAQ">http://trelevant.herokuapp.com/url/56/faq</string>
+    <string name="GOOGLE_ANALYTICS_ID">UA-48084549-2</string>
+</resources>

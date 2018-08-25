@@ -1,0 +1,428 @@
+<resources>
+    <string name="facebook_app_id">500373520130644</string>
+    <string name="fb_login_protocol_scheme">fb500373520130644</string>
+    <string name="app_name">Wetzel\'s Pretzels</string>
+    <string name="day_prompt">Select a Day</string>
+    <string name="contact_us_faq">Contact us at wetzels@rlvt.net</string>
+
+    <string-array name="day_arrays">
+        <item>DAY</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="month_prompt">Select a Month</string>
+
+    <string-array name="month_arrays">
+        <item>MONTH</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- Splash -->
+
+    <string name="imagecontent">a</string>
+    <string name="snapreceipt">SNAP RECEIPT</string>
+    <string name="viewrewards">VIEW REWARDS</string>
+    <string name="referafriend">REFER A FRIEND</string>
+    <string name="socialize">SOCIALIZE</string>
+    <string name="referafriendpagetitle">REFER A FRIEND\nEARN POINTS</string>
+    <string name="referfriendfirsttext">INTRODUCE YOUR FRIENDS</string>
+    <string name="referfriendsecondtext">TO WETZEL\'S. MESSAGE, TEXT, EMAIL, OR TWEET THEM YOUR REFERRAL CODE.</string>
+    <string name="snap_tutorial_white_text">Select your WETZEL\'S\nShow your Badge\nEarn Rewards</string>
+    <string name="snap_tutorial_orange_text">Tap to view your rewards badge</string>
+    <string name="snap_tutorial_page_title">Earn Points,\nGet Rewards</string>
+    <string name="snap_tutorial_page_desc">Show your badge to the cashier to earn points for each purchase!</string>
+
+    <!-- Snap Start -->
+
+
+    <!-- Splash -->
+
+    <string name="howtogetrewards">HOW TO GET REWARDS</string>
+
+    <string name="eat_tutorial_desc">Dine In or Take Away, eat or drink any of our delicious items.</string>
+    <string name="snap_tutorial_desc">Scan/Pay with your phone at the register or snap a photo of the barcode on your receipt to earn dough in the app.</string>
+    <string name="rewards_tutorial_desc">The more dough you earn,  the closer you get to scrumptious rewards.  </string>
+
+    <!-- Snap Start -->
+
+
+    <!-- Snap location -->
+
+    <string name="earnpoints">EARN POINTS</string>
+    <string name="selectlocationtosubmitreceipt">SELECT LOCATION TO SUBMIT RECEIPT</string>
+
+    <!-- Info -->
+
+    <string name="badgePageTitle">Display to Cashier to\nEarn Points</string>
+    <string name="htgr_eat_desc">Enjoy delicious subs, salads, sides\nand combos.</string>
+    <string name="htgr_snap_desc">Share your phone # with the cashier\nevery time you make a purchase</string>
+    <string name="htgr_claim_desc">Redeem your points for awesome\nrewards like free food</string>
+    <string name="tapbuttontosendlovetext">Tap button to send the <i>Love</i></string>
+    <string name="aboutroti">ABOUT ROTI</string>
+    <string name="locations">LOCATIONS</string>
+    <string name="Back">Back</string>
+    <string name="rewaredsmore">Redeem the Love</string>
+    <string name="rewards_page_redeem_text">Redeem the <i>LOVE</i>\n(in-store only)</string>
+    <string name="rewardspoints">My Points</string>
+    <string name="viewactivity">View activity</string>
+    <string name="faqinfo">FAQ</string>
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="contactus">CONTACT US</string>
+    <!-- <string name="setting"></string> -->
+    <string name="signupemail">Sign up with email</string>
+    <string name="email">Email Address</string>
+    <string name="firstname">First Name*</string>
+    <string name="lastname">Last Name*</string>
+    <string name="password">Password</string>
+    <string name="forgotpassword">FORGOT PASSWORD?</string>
+    <string name="privacy">Privacy policy</string>
+    <string name="terms">Terms of Use</string>
+    <string name="cardNumberHint">CREDIT CARD NUMBER</string>
+    <string name="cardTypeHint">CARD TYPE</string>
+    <string name="cvvHint">CVV</string>
+    <string name="monthYearHint">MM/YYYY</string>
+    <string name="billingAddressHint">BILLING ADDRESS</string>
+    <string name="zipCodeHint">Zipcode</string>
+    <string name="sep"> | </string>
+    <string name="loginplease">PLEASE LOG IN</string>
+    <string name="promogot">Got a promo code from us? \n Please enter your code here.</string>
+    <string name="promoenter">Please enter your code here.</string>
+    <string name="promoCase">Case sensitive, no spaces please.</string>
+    <string name="promoContact">Code not working? </string>
+    <string name="promocode_edit_contactus_link">Contact us.</string>
+    <string name="promocode">Promo Code</string>
+    <string name="promocodeinfo">PROMO CODE</string>
+    <string name="myaccount">MY ACCOUNT</string>
+    <string name="oldpassword">Old password</string>
+    <string name="newpassword">New password</string>
+    <string name="repeatpassword">Repeat password</string>
+    <string name="termsofuse">Terms of Use </string>
+    <string name="termsofusecontent">Terms of Use Page </string>
+    <string name="FOODTHATLOVESYOUbACK">FOOD THAT LOVES YOU BACK</string>
+    <string name="AboutUsQ">Is there any human emotion more powerful than love?</string>
+    <string name="AboutText" formatted="false">As a young chef in Brussels, Alain Coumont could not find the right bread to serve in his restaurant. Passionate about quality, he returned to his roots and decided to make it himself. He opened a small bakery where he could knead organic flour, salt and water into what have become his signature rustic loaves. That was in 1990, and those loaves are now the focal point of Wetzel\'s simple, wholesome cuisine in more than 200 locations on five continents.</string>
+    <string name="WELCOMETOROTI">WELCOME TO ROTI</string>
+    <string name="HAVEAREFERRAL">HAVE A REFERRAL?</string>
+    <string name="tapfbbutton">Tap the button to continue without a referral code</string>
+    <string name="Refercodeoptional">REFERRAL CODE (OPTIONAL)</string>
+    <string name="SIGNUPWITHEMAIL">SIGN UP</string>
+    <string name="PLEASELOGIN">PLEASE LOG IN</string>
+    <string name="LOGOUT">LOG OUT</string>
+    <string name="LOGIN">LOG IN</string>
+    <string name="login_page_title">LOG IN</string>
+    <string name="ChangePassword">Reset Password</string>
+    <string name="TransferYakiCard">"Transfer Yakiniku card"</string>
+    <string name="yaki_card_number">Yakiniku card number</string>
+    <string name="repeat_card_number">Repeat card number</string>
+    <string name="signuptermstext">By tapping on "Sign up with Facebook", "Sign up with email", or "Sign in" above you are indicating that you have read and agree to the <![CDATA[<a href="http://terms">Terms of Use</a>]]> and <![CDATA[<a href="http://privacy">Privacy Policy</a>]]>.</string>
+    <string name="textAboveFBSignup">SIGN UP WITH FACEBOOK EARN</string>
+    <!-- <string name="signuptermstext">By clicking the "Sign in" or "Sign up" buttons below you are indicating that you have read and agree to the</string> -->
+    <string name="signuptermstextterms">Terms of Use</string>
+    <string name="signuptermstextand"> and </string>
+    <string name="signuptermstextpolicy">Privacy Policy.</string>
+    <!-- Info -->
+    <string name="promocode_page_title">Promo Code</string>
+    <string name="locationinfo">LOCATIONS</string>
+    <string name="receipt_rejected">Your Receipt was rejected. Please contact support for more details.</string>
+    <string name="receipt_receive">Your receipt has been received. We will begin processing the image soon.</string>
+    <string name="receipt_process">Your receipt is processed and pending decision.</string>
+    <string name="info_how_to_receive_love">How to get rewards</string>
+
+    <string name="text_snap">Take a picture of your receipt \nand submit it to earn \nWETZEL\'S Love and more</string>
+
+
+    <string name="chooseuptothree">CHOOSE UPTO THREE</string>
+    <string name="daysleft">DAYS LEFT</string>
+    <string name="doacharity">DO A CHARITY RUN/WALK</string>
+    <string name="eatatzoes">EAT AT ROTI</string>
+    <string name="returningusers">Returning Email Users</string>
+    <string name="enteremal">ENTER YOUR EMAIL</string>
+    <string name="tweet">Tweet</string>
+    <string name="postfb">Post to Facebook</string>
+    <string name="cancel">Cancel</string>
+    <string name="freebr">Free</string>
+    <string name="mygoodiesredeam">Tap the buttons below to redeem or remove</string>
+    <string name="takehome">TAKE HOME TUB (100 points)</string>
+    <string name="choiceofentree">CHOICE OF ENTEREE</string>
+    <string name="num5">5</string>
+    <string name="x">X</string>
+
+    <!-- Zoes HISTORY -->
+    <string name="HISTORY1">\"Life\" as we know it</string>
+    <!-- &#8212; -->
+    <string name="HISTORY3">Welcome to WETZEL\'S.</string>
+
+    <!-- <string name="showcshier">SHOW SCREEN TO CASHIER</string> -->
+    <string name="showcshier">Please present this to your cashier at time\nof purchase. Not redeemable for cash. Non-\ntransferable. Valid only at participating locations.\nNot valid with other discounts or offers.</string>
+    <string name="redeemtext">Please tap “Redeem Reward” after you have asked your server\n for your check. This offer cannot be combined with other offers.</string>
+    <string name="showcshierredeemed">Your reward has been redeemed. You can no longer use this reward.</string>
+    <string name="reedeemable">(REEDEEMABLE IN-STORE)</string>
+    <string name="storeaddress">a </string>
+    <string name="timeremaining">TIME REMAINING</string>
+    <string name="time">1</string>
+    <string name="code">CODE: </string>
+    <string name="codeval">2</string>
+    <string name="reedeemd">REEDEEMD</string>
+    <string name="sucess">SUCCESS!</string>
+    <string name="thank">THANK YOU!</string>
+    <string name="receivedreceiptthank">Thank you for Scanning Your Receipt</string>
+    <string name="receivedreceipt">Thank you for your feedback!</string>
+    <string name="dinein">Dine in</string>
+    <string name="takeout">Take out</string>
+    <string name="pleaserate">Please rate your overall experience today.</string>
+    <string name="wasyourmeal">Was your meal simple, tasty, fresh?</string>
+    <string name="didtheteam">Did the team share Southern Hospitality?</string>
+    <string name="whatyouthink">Give us some Loveback!</string>
+    <string name="phottotip">RECEIPT PHOTO TIPS</string>
+    <string name="phottotip1">• Place receipt on a flat surface</string>
+    <string name="phottotip2">• Use adequate lighting</string>
+    <string name="phottotip3">• Make sure text is not blurry</string>
+    <string name="pleaselineup">PLEASE LINE UP YOUR RECEIPT</string>
+    <string name="wait">Please Wait&#8230;</string>
+    <string name="uploading">We\'re uploading your receipt</string>
+    <string name="Retake">Retake</string>
+    <string name="Use">Use</string>
+    <string name="Usesubmit">Submit</string>
+    <string name="Preview">Preview</string>
+    <string name="whendone">WHEN DONE, HIT BACK BUTTON</string>
+    <string name="Welcometozoe">Welcome to the WETZEL\'S mobile app experience!</string>
+    <string name="submitazoe">Submit a WETZEL\'S receipt to earn Goodies!</string>
+    <string name="Sprinkling">Sprinkling </string>
+    <string name="Zoelifegoals">WETZEL\'S life goals</string>
+    <string name="throughouttheweek">throughout the week can spice up any routine!</string>
+    <string name="Completeagoalmight">Complete a goal might even lead to a </string>
+    <string name="surprise">surprise!</string>
+    <string name="Getstartedby">Get started by picking</string>
+    <string name="threeareas">3 areas</string>
+    <string name="tofocuson">to focus on&#8230;</string>
+    <string name="taptoenlarge">(TAP TO ENLARGE)</string>
+    <string name="taptoreturn">(TAP ON IMAGE TO RETURN)</string>
+    <string name="goalcongratulation">Congratulations!</string>
+    <string name="goaldescription">goaldescription</string>
+    <string name="goaltitle">goaldescription</string>
+    <!-- <string name="goaltap">Tap the button below to see your new reward!</string> -->
+    <string name="goaltap">You\'ll get an email when your new goodie is ready to be redeemed!</string>
+    <string name="claimmessageheader">Did our staff get your code?</string>
+    <string name="claimmessages">Do NOT exit this page until the cashier has seen your 12-digit code. \n\nTapping \"Continue\" will return you to My Dough. You will not be able to access this code again.</string>
+    <string name="signupheader">Please confirm that your email is\n</string>
+    <string name="signupmessages">.\n\nWe will use this email to contact you about rewards you have earned</string>
+    <string name="signupattentionmessages">\n\nIf you choose to use mobile pay, billing related emails will also be sent to this address</string>
+    <string name="sendgiftcardheader">Please confirm that your destination email is\n</string>
+    <string name="sendgiftcardmessages">.\n\nWe will send your giftcard to this email</string>
+
+    <!-- <string name="claimmessageheader">Are you done?</string> -->
+    <!-- <string name="claimmessages">Do NOT exit this page until the cashier has seen your 3-digit code. \n\n Tapping \"Continue\" will return you to My Goddies. You will not be able to access this code again.</string> -->
+
+
+    <!-- <string name="">Tap the buttons below to redeem or remove</string> -->
+    <string name="zoesstoryheader">\"Life\" as we know it</string>
+    <!-- <string name="zoesstory">Zoës Kitchen is a natural extension of Zoë Cassimus\' lifetime of cooking for family and friends. Inspired by Zoë\'s original recipes and her simple, fresh-from-the-garden sensibility, we start every day by making the food from scratch onsite at each restaurant. Our dishes are wholesome; our portions generous. Born in the Mediterranean and raised in the South with customers\' dietary concerns in mind-nothing fried with gluten-free and vegetarian options. Zoë means \"life\" in Greek. Live it to the fullest with tasty food shared among close friends and family at Zoës.</string> -->
+    <!-- <string name=""></string> -->
+    <!-- <string name=""></string> -->
+    <!-- <string name=""></string> -->
+
+
+    <!-- text phone -->
+    <string name="signuptext">We do NOT share personally identifiable information, like your phone number or email address, with third parties. We will email you when you have earned rewards or with occasional WETZEL\'S offers. Your phone number may be used by our staff to help award you points at the register.</string>
+
+    <!-- FAQ -->
+    <!-- <string name="FAQDiscription">At Zoës we think life is meant to be celebrated with great food, friends and fun\!\ We believe that part of getting the most out of life is setting realistic goals to be healthy, spend time with loved ones, lifelong learning, and giving back to the community. One of the BEST parts of setting goals is treating yourself when you’ve reached them.\nThat’s what this app is all about. We hope that you’ll it helpful in getting more out of life, treats and all!\n\nTo participate in the LIFE Challenge:\nEach week you can complete up to 7 challenges customized for you by Zoës. Simply tap on the Life Goals tab and you’ll be prompted to choose up to 3 goal areas. A week’s worth of challenges will be determined by your selected goal areas and will refresh every Sunday with a new set of challenges. Do as many as you can, but don’t worry if you can’t complete them all – we know your life is busy!\n\nAfter you’ve performed one of your weekly challenges, mark it as complete by tapping on the check box next to it. You’ll see your cup of Limeade fill a bit and once the cup is full you’re eligible for a Goodie from Zoës!\nYou can change your Goal Areas at any time by scrolling to the bottom of your weekly challenge list.</string> -->
+    <string name="FAQQ1">How does this work?</string>
+    <string name="FAQA1">Earn <i>Love</i> by dining at WETZEL\'S and sending us a picture of your receipt through the app. To send your receipt tap the Snap button on the Home screen (or just tap the Snap tab), choose your location, and click the Use button. $1 = 10 points and every time you submit a receipt, you will be eligible to earn points! In order to receive points you must submit an itemized receipt, not a credit card receipt, kitchen slip, or other ordering receipt. Points can be awarded for the purchase of a gift card but not for payments made using gift cards. We are not able to award points for the purchase of alcohol. The correct receipt will be the receipt you receive from the cashier with subtotal and tax information listed as well as the items ordered for your meal.</string>
+    <string name="FAQQ2">How do I know how many points I have?</string>
+    <string name="FAQA2">Tap the Love tab on the navigation bar. There you can track how many points you have and how far away you are from being able to redeem the <i>Love</i>. Green-colored rewards are ready to be redeemed. Light green-colored rewards are ones you are still working towards earning – when you have enough points to redeem one of these rewards, it will turn green.</string>
+    <string name="FAQQ3">How do I redeem the <i>Love</i>?</string>
+    <string name="FAQA3">In the Love tab, tap on any Green-colored reward that you want to redeem and it will instantly turn into a digital reward that you can present to the cashier at check-out. Click on “Redeem the <i>Love</i>” when you are in line to order, and then “Confirm” when you are IN FRONT OF THE CASHIER. You will have a couple minutes to show the cashier your unique code.</string>
+    <string name="FAQQ4">How do I use my digital voucher?</string>
+    <string name="FAQA4">Just tap the blue Redeem reward button that appears after you’ve selected the reward you’d like to redeem.  Show your phone to the cashier.  Once you have redeemed your reward you cannot redeem it again until you have accumulated enough points to do so. You’ll need to be connected to your mobile network in order for the voucher to successfully be redeemed.</string>
+    <string name="FAQQ5">I\'m having trouble uploading my receipt from the app. What do I do?</string>
+    <string name="FAQA5">Email the image receipt to us along with your account email address (the one you use for log in) to wetzels@rlvt.net.</string>
+    <string name="FAQQ6">Can I make some suggestions?</string>
+    <string name="FAQA6">Sure! We\'d be happy to hear from you at wetzels@rlvt.net.</string>
+    <string name="reward_acess_email">To continue sign up for the rewards program Please grant access to email address.</string>
+    <string name="lorem_ipsum1">Lorem ipsum dolor sit amet, consectetur?</string>
+    <string name="lorem_ipsum2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <!-- <string name=""></string> -->
+
+    <string name="title_activity_location">Location</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="payment_desc">Click \"Payment Settings\" to store your credit card information safely and securely on your WETZEL\'S account. When you pay using the app, you\'ll earn rewards automatically. Just present the barcode to the retailer to scan.</string>
+    <string name="payment_type_prompt">Choose a type</string>
+    <string name="fav_menu_prompt">Choose a menu</string>
+    <string name="get_started_text">TO SEND YOUR FREND A DIGITAL WETZEL\'S GIFT CARD JUST SELECT A CARD DESIGN, ENTER YOUR FRIEND\'S EMAIL ADDRESS, BOTH YOUR NAMES, AND THE AMOUNT YOU\'D LIKE TO SEND THEN SELECT A PAYMENT METHOD, EASY PEASY!</string>
+
+
+    <string name="CONSUMER_KEY">BfZrmsp8a4ei1iFbSgYrwj3Zp</string>
+    <string name="CONSUMER_SECRET">CqzlCP5gft9uHmjVv6DgQShli4SSBWwcKndQB7J3Q70JR6PJQF</string>
+    <string name="TWITTER_MEDIA_API_KEY">0dcf25567ddfcf5a1491dd1d5e0cf4e8</string>
+    <string name="REQUEST_URL">http://api.twitter.com/oauth/request_token</string>
+    <string name="ACCESS_URL">http://api.twitter.com/oauth/access_token</string>
+    <string name="AUTHORIZE_URL">http://api.twitter.com/oauth/authorize</string>
+    <string name="OAUTH_CALLBACK_SCHEME">x-oauthflow-twitter</string>
+
+    <string name="OAUTH_CALLBACK_HOST">callback</string>
+    <string name="OAUTH_CALLBACK_URL">OAUTH_CALLBACK_SCHEME</string>
+
+
+    <string name="NO_LOC_FOUND_txt">We could not find a store near that location. Please try again.</string>
+    <string name="LOCALE_HEADER_VALUE">en</string>
+    <string name="reward_acess_email_">Oops! It looks like your email hasn`t been verified with your Facebook account. If you would like to continue, all you have to do is verify your email address on Facebook and you`ll be all set!</string>
+    <string name="message">.\\n\\nWe will use this email to contact you about rewards you have earned</string>
+    <string name="BLANKMESSAGEREPLACEMENT">We are sorry. Something went wrong. Please try again. If problem persists, contact customer support from the info section of the app for further assistance.</string>
+    <string name="add_to_balance">ADD TO BALANCE</string>
+    <string name="current_balance">CURRENT BALANCE</string>
+    <string name="you_can_add_to_balance">YOU CAN ADD TO YOUR BALANCE USING ONE OF THE PAYMENT FORMS BELOW.</string>
+    <string name="credit_card">CREDIT CARD</string>
+    <string name="edit_gift_card">EGIFTCARD CODE</string>
+    <string name="select_photo">SELECT PHOTO</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="favorit_menu_item">FAV. MENU ITEM</string>
+    <string name="birthday_optional">BIRTHDAY (OPTIONAL)</string>
+    <string name="sign_up_using_fb">SIGN UP USING FACEBOOK</string>
+    <string name="by_providing_your_email_you_subscribe">By providing your email address you are opting-in to potentially receive marketing emails from us at any time.</string>
+    <string name="city_state_zipcode">CITY, STATE OR ZIPCODE</string>
+    <string name="scroll_select_giftcard">SCROLL TO SELECT A GIFT CARD\"</string>
+    <string name="select_amount">SELECT AMOUNT</string>
+    <string name="other_amount">OTHER AMOUNT (BETWEEN $2 AND $100)</string>
+    <string name="add_new_credit_card">ADD NEW CREDIT CARD</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="EMAIL">EMAIL</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="sign_in_using_fb">SIGN IN USING FACEBOOK</string>
+    <string name="NAME_ON_CARD">NAME ON CARD</string>
+    <string name="EXPIRY_DATE">EXPIRY DATE</string>
+    <string name="STREET_ADDRESS">STREET ADDRESS</string>
+    <string name="CITY">CITY</string>
+    <string name="STATE">STATE</string>
+    <string name="PHONE_NUMBER">PHONE NUMBER</string>
+    <string name="ZIP_CODE">ZIP CODE</string>
+    <string name="CARD_TYPE">CARD TYPE</string>
+    <string name="SAVE_PAYMENT_METHOD">SAVE PAYMENT METHOD</string>
+    <string name="the_full_amount_of_gift_card">THE FULL AMOUNT OF YOUR GIFT CARD WILL BE ADDED TO YOUR APP BALANCE.</string>
+    <string name="egiftcard_code">EGIFTCARD CODE</string>
+    <string name="confirm_egiftcard">CONFIRM EGIFTCARD CODE</string>
+    <string name="submit">SUBMIT</string>
+    <string name="next">NEXT</string>
+    <string name="send_some_pretzel">Send some Pretzel love</string>
+    <string name="EMAIL_TO">EMAIL TO</string>
+    <string name="TO_NAME">TO NAME</string>
+    <string name="FROM_NAME_OPTIONAL">FROM NAME (OPTIONAL)</string>
+    <string name="CUSTOM_MESSAGE_OPTIONAL">CUSTOM MESSAGE (OPTIONAL)</string>
+    <string name="GO_BACK">GO BACK</string>
+    <string name="REVIEW_CREDIT_CARD_PAYMENT">REVIEW CREDIT CARD PAYMENT</string>
+    <string name="AMOUNT">AMOUNT</string>
+    <string name="dollar_zero">$0.00</string>
+    <string name="ADD_NEW_CARD">ADD NEW CREDIT CARD</string>
+    <string name="CONTACT_US">CONTACT US</string>
+    <string name="ACTIVITY_HISTORY">ACTIVITY HISTORY</string>
+    <string name="MANAGE_PAYMENT">MANAGE PAYMENT</string>
+    <string name="FAQ">FAQ</string>
+    <string name="UPDATE_PASSWORD">UPDATE PASSWORD</string>
+    <string name="REFER_A_FRIEND">REFER A FRIEND</string>
+    <string name="TUTORIAL">TUTORIAL</string>
+    <string name="HOW_TO_USE">How to use the Wetzel app</string>
+    <string name="about_us">About Us</string>
+    <string name="enter_a_promo_code">Enter a Promo Code</string>
+    <string name="menu">Menu</string>
+    <string name="Locations">Locations</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="social_feed">Social Feed</string>
+    <string name="social_share">Social Share</string>
+    <string name="CURRENT_PASSWORD">CURRENT PASSWORD</string>
+    <string name="NEW_PASSWORD">NEW PASSWORD</string>
+    <string name="REPEAT_NEW_PASSWORD">REPEAT NEW PASSWORD</string>
+    <string name="SAVE">SAVE</string>
+    <string name="CONNECT_WITH_YOUR_FRIENDS">CONNECT WITH YOUR FRIENDS</string>
+    <string name="share_your_code_with_your_friends">Share your code with your friends and receive suprise once they use code to create profile on the APP.</string>
+    <string name="TAP_CODE_TO_COPY">TAP CODE TO COPY</string>
+    <string name="CODE_COPIED_TO_CLIPBOARD">CODE COPIED TO CLIPBOARD</string>
+    <string name="ACTIVITY">ACTIVITY</string>
+    <string name="REDEEM">REDEEMED</string>
+    <string name="tap_to_refresh">Tap to refresh</string>
+    <string name="got_a_promo_code">GOT A PROMO CODE?</string>
+    <string name="ENTER_A_PROMO_CODE">ENTER PROMO CODE</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string name="collect_your_dough">Collect your Dough</string>
+    <string name="please_present_this_to_your">Please present this to your cashier at the time of purchase.</string>
+    <string name="BACK">BACK</string>
+    <string name="REDEEM_NOW">REDEEM NOW</string>
+    <string name="SCAN_CODE_AT_REGISTER">SCAN CODE AT REGISTER TO REDEEM</string>
+    <string name="please_present_this_at_register">Please present this to your cashier at the time of purchase.</string>
+    <string name="DONE">DONE</string>
+    <string name="GOT_A_PROMO_CODE">GOT A PROMO CODE?</string>
+    <string name="use_the_search_above_or_turnon_location_services">Use the search bar above or turn on location services to find locations near you.</string>
+    <string name="FAVORITE_STORE">FAVORITE STORE</string>
+    <string name="please_select_your_favorite_store_to_continue">PLEASE SELECT YOUR FAVORITE STORE TO CONTINUE</string>
+    <string name="search">SEARCH</string>
+    <string name="ACTIVATE_ACCOUNT">ACTIVATE ACCOUNT</string>
+    <string name="VERIFICATION">VERIFICATION</string>
+    <string name="a_verification_email_has_been_sent">A VERIFICATION E-MAIL WAS SENT TO</string>
+    <string name="please_verify_your_account_to_continue">PLEASE VERIFY YOUR ACCOUNT TO CONTINUE USING WETZELS APP.</string>
+    <string name="sign_in_with_another_account">SIGN IN WITH ANOTHER ACCOUNT</string>
+    <string name="sign_up_with_another_account">SIGN UP WITH ANOTHER ACCOUNT</string>
+    <string name="if_you_havent_recieved">*if you havent recieved a verification e-mail, please</string>
+    <string name="OR">OR</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="password_minimum">PASSWORD (min. 6 characters)</string>
+    <string name="CONFIRM_PASSWORD">CONFIRM PASSWORD</string>
+    <string name="favorite_store_optional">FAVORITE STORE (OPTIONAL)</string>
+    <string name="referal_code_optional">REFFERAL CODE (OPTIONAL)</string>
+    <string name="mall_employee">MALL EMPLOYEE</string>
+    <string name="retailer_optional">RETAILER (OPTIONAL)</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="opt_in_for_emails">By providing your email address you are opting-in to potentially receive marketing emails from us at any time.</string>
+    <string name="please_check_your_spam_folder">check your spam folder or</string>
+    <string name="resend_verification">Resened Verification mail</string>
+    <string name="purchase_six_items">PURCHASE 6 ITEMS AND GET A REWARD</string>
+    <string name="account_success">ACCOUNT SUCCESSFULLY VERIFIED</string>
+    <string name="enter_amount">Please enter amount that is between $2 and $100.</string>
+    <string name="sign_up_with_facebook">SIGN UP WITH FACEBOOK</string>
+    <string name="you_cannot_use_the_add_photo">You can not use the add photo option if there is not permission for the phone storage.</string>
+    <string name="to_enable_storage_access">To enable add photo access, please go to Settings > Apps > Wetzels > Permissions and slide the button next to \'Storage\' till it\'s green.</string>
+
+</resources>

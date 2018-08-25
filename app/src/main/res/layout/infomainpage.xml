@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_img_height"
+        android:background="@drawable/header_info" />    
+    
+    <ImageView
+        android:id="@+id/img_login_option_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"        
+        android:src="@drawable/info_img1" />
+    
+    <ScrollView
+        android:id="@+id/infomainpage_ScrollView_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header_img" >
+
+       <LinearLayout
+            android:id="@+id/infomainpage_linear_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_ten"
+            android:layout_marginBottom="@dimen/margin_top_twenty"
+            android:layout_marginLeft="@dimen/margin_top_twenty"
+            android:layout_marginRight="@dimen/margin_top_twenty"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                android:id="@+id/contactusBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_twenty"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_contactus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CONTACT_US" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/activityHistoryBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_activity_history"
+                    android:layout_width="317dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ACTIVITY_HISTORY" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/managePaymentBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_managepayment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MANAGE_PAYMENT" />
+           
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+           	</RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/faqBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_faq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FAQ" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/updateAccountBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_updateaccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/UPDATE_PASSWORD" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/referFriendBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_referfriend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/REFER_A_FRIEND" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+                
+           	</RelativeLayout>
+           	
+            <RelativeLayout
+                android:id="@+id/tutorialBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_tutorial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TUTORIAL" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+                
+           	</RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/activateAccountButton"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/padding_five"
+               android:padding="@dimen/padding_fifteen"
+               android:background="@drawable/btn_orange_selector"
+               android:gravity="center_vertical" >
+
+               <TextView
+                   android:id="@+id/infomainpage_text_activate_account"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ACTIVATE_ACCOUNT" />
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:src="@drawable/arrow" />
+
+           </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logoutBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+	            android:padding="@dimen/padding_fifteen"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LOGOUT" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+                
+           	</RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/surveyBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_five"
+                android:background="@drawable/btn_orange_selector"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_fifteen"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_survey"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SURVEY (TEMP)" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow" />
+                
+           	</RelativeLayout>
+           	
+			<View 
+			    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_min_fifity" />
+			                            	
+            <!-- gone below -->
+            
+            <RelativeLayout
+                android:id="@+id/howtogetrewardsBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+	            android:padding="@dimen/padding_fifteen"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_howtogetrewards"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/HOW_TO_USE"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/aboutusBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+	            android:padding="@dimen/padding_fifteen"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_aboutroti"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/about_us"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/promocodeBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_promocode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/enter_a_promo_code"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/menuBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/menu"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/locationsBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_locations"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/Locations"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/transferYakinikuCardBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/settings_text_transfer_yaki_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/TransferYakiCard"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/provideFeedbackBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_provide_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/provide_feedback"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+
+            <!-- edit -->
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+            
+            <RelativeLayout
+                android:id="@+id/socializeBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_socialize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/social_feed"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/fullWebsiteBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_fullwebsite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="Full Website"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gkk_line"
+                android:contentDescription="@string/imagecontent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/socialShareBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_ten"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/infomainpage_text_social_share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dip"
+                    android:paddingBottom="@dimen/padding_five"
+                    android:paddingTop="@dimen/padding_five"
+                    android:text="@string/social_share"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

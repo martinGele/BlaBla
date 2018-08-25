@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/favorite_spot_to_eat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/whie_thref"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_ten">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/padding_five"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/findzoes_list_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eatatzoes"
+                android:textColor="@color/main_background"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/findzoes_list_text_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/eatatzoes"
+                android:textColor="@color/blue_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/city_state_zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_five"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/eatatzoes"
+                android:textColor="@color/blue_color"
+                android:textSize="12dp" />
+
+
+
+            <!-- <TextView
+                android:id="@+id/findzoes_list_text_dist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/eatatzoes"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="12dp" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/padding_five">
+
+            <ImageView
+                android:id="@+id/favorite_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/arrow_fav_store" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+</LinearLayout>
+
+

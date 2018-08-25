@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="APPLICATION_NAME">Wetzel\'s Pretzels</string>
+    <string name="APPKEY">rscT3ngideKFwJZF</string>
+    <string name="BASE_URL">https://app.relevantmobile.com/api/v1</string>
+    <string name="BASE_URL_HTTPS">https://app.relevantmobile.com/api/v1</string>
+    <string name="BASE_URL_MOBILEPAY">https://pay.relevantmobile.com/mobilepay/api/v2</string>
+    <string name="BASE_URL_GIFTCARD">https://pay.relevantmobile.com/giftcard-rest/api/v1</string>
+    <string name="URL_TERMS_OF_USE">https://app.relevantmobile.com/terms_of_use?appkey=rscT3ngideKFwJZF</string>
+    <string name="URL_PRIVACY_URL">https://app.relevantmobile.com/privacy_policy?appkey=rscT3ngideKFwJZF</string>
+    <string name="URL_FB_PAGE">https://app.relevantmobile.com/url/36/facebook</string>
+    <string name="URL_TWITTER_PAGE">https://app.relevantmobile.com/url/36/twitter</string>
+    <string name="URL_ORDER_ONLINE">https://app.relevantmobile.com/url/19/veggie-grill-order-online</string>
+    <string name="URL_MENU_ONLINE">https://app.relevantmobile.com/url/36/menu</string>
+    <string name="URL_CALC_ONLINE">https://app.relevantmobile.com/url/24/nutritional-calculator-fire-house-subs</string>
+    <string name="URL_FAQ">https://app.relevantmobile.com/url/35/faq</string>
+    <string name="GOOGLE_ANALYTICS_ID">UA-48084549-2</string>
+</resources>

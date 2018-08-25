@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/camera_relative_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/camera_relative_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/topbar_blank" >
+
+            <TextView
+                android:id="@+id/camera_text_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:contentDescription="@string/imagecontent"
+                android:gravity="center"
+                android:text="@string/pleaselineup"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/camera_image_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/help"
+                android:contentDescription="@string/imagecontent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_linear_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/camera_relative_title"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/take_photo_receipt_guide"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp" >
+
+            <!-- <SurfaceView -->
+            <!-- android:id="@+id/camera_check_surfaceview" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_gravity="center_horizontal" -->
+            <!-- android:layout_marginLeft="0dp" -->
+            <!-- android:layout_marginRight="0dp" -->
+            <!-- android:background="@drawable/take_photo_receipt_guide" > -->
+            <!-- </SurfaceView> -->
+
+            <com.ak.app.roti.snap.ProfileCameraLiveView
+                android:id="@+id/camera_live_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/headerImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/take_photo_receipt_guide"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/camera_relative_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_bar_blank" 
+            >
+
+            <!-- android:background="@drawable/social_nav_bar" -->
+
+            <TextView
+                android:id="@+id/camera_text_retake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/photo_btn_blank"
+                android:gravity="center"
+                android:text="@string/Retake"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/camera_image_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/camera_btn"
+                android:contentDescription="@string/imagecontent" />
+
+            <TextView
+                android:id="@+id/camera_text_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/Preview"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/camera_text_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/photo_btn_blank"
+                android:gravity="center"
+                android:text="@string/Usesubmit"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

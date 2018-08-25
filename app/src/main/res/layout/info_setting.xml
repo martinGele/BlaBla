@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical" >
+
+    
+
+    <TextView
+        android:id="@+id/settings_relative_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="INFO" >
+    </TextView>
+    
+    <ImageView 
+        android:id="@+id/settings_line_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/settings_relative_header"
+        android:src="@drawable/top_line_divider"/>
+
+    <LinearLayout
+        android:id="@+id/settings_linear_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/settings_line_divider"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/settings_text_ChangePassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/ChangePassword"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gkk_line"
+            android:contentDescription="@string/imagecontent" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/settings_text_LOGOUT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/LOGOUT"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gkk_line"
+            android:contentDescription="@string/imagecontent" />
+    </LinearLayout>
+
+</RelativeLayout>

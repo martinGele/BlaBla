@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/location_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/black" >
+
+        <TextView
+            android:id="@+id/locfindzoes_list_text_name"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/eatatzoes"
+            android:textColor="@color/faqorange_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gkk_arrow_2"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/locfindzoes_list_text_address"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locfindzoes_list_text_name"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="4dp"
+            android:text="@string/eatatzoes"
+            android:textColor="@color/dark_grey_text"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/locationsToCome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gkk_line" />
+
+    <!--
+         <RelativeLayout
+        android:id="@+id/locationsLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/gkk_line" >
+    </RelativeLayout>
+    -->
+
+
+    <!--
+         <ImageView
+        android:id="@+id/locationsToCome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/locations_to_come"
+        android:visibility="gone" />
+    -->
+
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/blackLastLine"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/locationsLine"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/black" >
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

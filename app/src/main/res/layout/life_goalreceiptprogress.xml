@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myNamespace="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+ 
+    <RelativeLayout
+        android:id="@+id/completegoalreceiptprogress_relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip"
+        android:background="@drawable/gkk_top_bar" >
+
+<!--         <TextView -->
+<!--             android:id="@+id/completegoalreceiptprogress_text_back" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="10dip" -->
+<!--             android:background="@drawable/back" -->
+<!--             android:gravity="center" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/completegoalreceiptprogress_linear_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_below="@+id/completegoalreceiptprogress_relative_header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/completegoalreceiptprogress_text_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="@string/wait"
+            android:textColor="@color/faqorange_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/completegoalreceiptprogress_text_uploading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/uploading"
+            android:textColor="@color/dark_grey_text"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" >
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/receipt_icon"
+                android:contentDescription="@string/imagecontent" />
+        </RelativeLayout>
+
+        <com.widgets.RoundProgress
+            android:id="@+id/completegoalreceiptprogress_progress_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:padding="5dip"
+            myNamespace:max="100"
+            myNamespace:progress="0"
+            myNamespace:progressDrawable="@drawable/red_progress_clip"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

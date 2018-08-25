@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myNamespace="http://schemas.android.com/apk/res/com.ak.app.wetzel.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <RelativeLayout
+        android:id="@+id/completegoalreceiptprogress_relative_header"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gkk_top_bar" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/completegoalreceiptprogress_linear_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/completegoalreceiptprogress_relative_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/completegoalreceipt_text_receivedreceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/receivedreceiptthank"
+            android:textColor="#666"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="55dp"
+            
+            android:contentDescription="@string/imagecontent" >
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/completegoalreceipt_text_view_my_goodies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/gkk_done_btn"
+            android:contentDescription="@string/imagecontent" />
+    </LinearLayout>
+
+</RelativeLayout>

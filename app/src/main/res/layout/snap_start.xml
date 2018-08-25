@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_img_height"
+        android:background="@drawable/header_img_send_giftcard" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_img">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/addbalance_linear_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_twenty">
+
+                <TextView
+                    android:id="@+id/giftcard_design_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:gravity="center_horizontal"
+                    android:text="@string/scroll_select_giftcard" />
+
+                <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/btn_left"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/btn_left"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp" /> -->
+
+                <RelativeLayout
+                    android:id="@+id/pager_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingBottom="@dimen/padding_ten"
+                    android:paddingTop="@dimen/margin_top_ten">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/btn_left"
+                        android:layout_width="@dimen/btn_leftRight_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/btn_right"
+                        android:layout_width="@dimen/btn_leftRight_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <!-- </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_right"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_right"
+                    android:visibility="gone" />
+            </LinearLayout> -->
+
+                <LinearLayout
+                    android:id="@+id/layout_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_bottom_three"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/giftcard_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_bottom_three"
+                    android:src="@drawable/gift_01"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_twenty"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/padding_twenty"
+                    android:paddingRight="@dimen/padding_twenty">
+
+                    <TextView
+                        android:id="@+id/add_balance_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/select_amount" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_ten"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radio0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_check_amount"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_thirteen"
+                            android:text="$15" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_background" />
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_check_amount"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_thirteen"
+                            android:text="$25" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_background" />
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_check_amount"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_thirteen"
+                            android:text="$35" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/main_background" />
+
+                        <RadioButton
+                            android:id="@+id/radio3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_check_amount"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_thirteen"
+                            android:text="$45" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/margin_top_twenty"
+                    android:layout_marginRight="@dimen/margin_top_twenty"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:background="@color/gray_orange"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_ten">
+
+                    <EditText
+                        android:id="@+id/editHideFocus"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp" />
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whie_thref">
+
+                        <TextView
+                            android:id="@+id/addbalance_edit_eOtherAmount_hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:paddingTop="@dimen/padding_ten"
+                            android:text="@string/other_amount"
+                            android:textAlignment="center"
+                            android:textColor="@color/main_background" />
+
+                        <EditText
+                            android:id="@+id/addbalance_edit_eOtherAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionDone"
+                            android:inputType="none"
+                            android:maxLength="3"
+                            android:maxLines="2"
+                            android:minHeight="@dimen/margin_min_fifity"
+                            android:paddingLeft="@dimen/padding_five"
+                            android:paddingRight="@dimen/padding_five"
+                            android:scrollHorizontally="false"
+                            android:tag="addbalance_edit_eOtherAmount_hint"
+                            android:textCursorDrawable="@null" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_addnew_creditcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_twenty"
+                    android:layout_marginRight="@dimen/margin_top_twenty"
+                    android:layout_marginTop="@dimen/margin_top_ten"
+                    android:background="@drawable/btn_orange_selector"
+                    android:padding="@dimen/padding_fifteen"
+                    android:text="@string/next" />
+
+                <TextView
+                    android:id="@+id/giftcard_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_twenty"
+                    android:gravity="center"
+                    android:text="@string/send_some_pretzel" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

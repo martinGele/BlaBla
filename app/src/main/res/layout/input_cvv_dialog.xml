@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cvv_bg"
+    android:padding="20dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/cvv_icon" />
+        
+        <TextView
+            android:id="@+id/text_cvv_info"
+            android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:gravity="center"
+        	android:textColor="@color/white"
+        	android:text="THE CVV NUMBER IS THE 3 DIGITS ON THE BACK OF YOUR CARD OR 4 DIGITS ON THE FRONT OF YOUR CARD." />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/orange_color"
+	    android:orientation="vertical"
+	    android:padding="10dp" >
+	
+	    <EditText
+	        android:id="@+id/editHideFocus"
+	        android:layout_width="0dp"
+	        android:layout_height="0dp" />
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#fff" >                        
+	
+	        <EditText
+	            android:id="@+id/edit_cvv"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#00000000"
+	            android:ellipsize="end"
+	            android:gravity="center_vertical"
+	            android:imeOptions="actionDone"
+	            android:digits="0123456789"
+	            android:inputType="number|none"
+	            android:maxLength="4"
+	            android:maxLines="2"
+	            android:minHeight="50dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:scrollHorizontally="false"
+	            android:hint="CVV"
+	            android:textColorHint="@color/main_background"
+	            android:textCursorDrawable="@null" />
+	    </RelativeLayout>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+	    
+ 		<Button 
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        	android:layout_marginRight="1dp"
+         	android:padding="15dp"
+            android:text="CANCEL"
+            android:background="@drawable/btn_blue_selector" />
+        <Button 
+            android:id="@+id/btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        	android:layout_marginLeft="1dp"
+         	android:padding="15dp"
+            android:text="ENTER"
+            android:background="@drawable/btn_orange_selector" />
+   	</LinearLayout>
+        
+</LinearLayout>

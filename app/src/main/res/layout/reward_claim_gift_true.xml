@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whie_thref"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/beige_bg_sm" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reward_claim_relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dip" >
+
+        <TextView
+            android:id="@+id/reward_claim_text_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_top_ten"
+            android:background="@drawable/cancel_btn"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/reward_claim_linear_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/reward_claim_relative_header"
+        android:layout_margin="@dimen/margin_top_ten"
+        android:background="@drawable/medium_white_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="142dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/margin_fifteen"
+            android:visibility="gone"
+            android:src="@drawable/logo_lg" />
+
+        <TextView
+            android:id="@+id/reward_claim_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/margin_top_ten"
+            android:gravity="center"
+            android:text="@string/tapbuttontosendlovetext"
+            android:textColor="@color/whie_thref"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:id="@+id/reward_claim_linear_claim_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_thirty"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!--
+                 <ImageView
+                android:id="@+id/reward_claim_image_claim_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redeemed"
+                android:contentDescription="@string/imagecontent" />
+            -->
+
+            <TextView
+                android:id="@+id/reward_claim_image_claim_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_min_fifity"
+                android:background="@drawable/send_love_button"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reward_claim_linear_redeembutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_thirty"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/reward_claim_text_redeembutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/send_love_button"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/margin_top_thirty"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rewards_green_bar" >
+
+                <TextView
+                    android:id="@+id/reward_claim_text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textColor="@color/whie_thref"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

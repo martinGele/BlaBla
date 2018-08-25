@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/home_linear_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tabView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="0dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_one"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/home" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="0.1dp" />
+
+
+        <ImageView
+            android:id="@+id/navGift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/snap" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="0.1dp" />
+
+        <ImageView
+            android:id="@+id/navRewards"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/rewards" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="0.1dp" />
+
+
+        <ImageView
+            android:id="@+id/navFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/social" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="0.1dp" />
+
+
+        <ImageView
+            android:id="@+id/navInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/info" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

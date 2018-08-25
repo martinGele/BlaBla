@@ -1,0 +1,359 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/home_top_space"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_top_space_height" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_top_space"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="@dimen/reward_title_width"
+                    android:layout_height="@dimen/reward_title_height"
+                    android:layout_marginRight="@dimen/reward_title_margin_right"
+                    android:contentDescription="@string/imagecontent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/your_rewards_meter_text" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/meterLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_top_space"
+                android:layout_marginTop="7dp"
+                android:gravity="right" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/meter_img_margin_right"
+                    android:layout_marginTop="@dimen/meter_img_margin_top" >
+
+                    <ImageView
+                        android:id="@+id/meterImg"
+                        android:layout_width="@dimen/meter_img_size"
+                        android:layout_height="@dimen/meter_img_size"
+                        android:contentDescription="@string/imagecontent"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/meter0" />
+
+                    <LinearLayout
+                        android:id="@+id/meterImgBack"
+                        android:layout_width="@dimen/meter_img_size"
+                        android:layout_height="@dimen/meter_img_size"
+                        android:background="@drawable/meter_white"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/home_meter_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="5" />
+
+                        <TextView
+                            android:id="@+id/home_meter_togo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-20dp"
+                            android:gravity="center"
+                            android:text="TO GO!" />
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/backed_img"
+                android:layout_width="@dimen/oven_img_size"
+                android:layout_height="@dimen/oven_img_size"
+                android:layout_below="@+id/home_top_space"
+                android:layout_marginTop="@dimen/oven_img_margin_top"
+                android:contentDescription="@string/imagecontent"
+                android:scaleType="fitStart"
+                android:src="@drawable/main_backing01" />
+
+            <ImageView
+                android:id="@+id/simple_anim"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/home_top_space"
+                android:layout_marginTop="20dp"
+                android:src="@anim/fire_animation"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/cardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/meterLayout"
+                android:layout_marginTop="20dp"
+                android:gravity="center" >
+
+                <FrameLayout
+                    android:layout_width="@dimen/card_img_width"
+                    android:layout_height="@dimen/card_img_height" >
+
+                    <ImageView
+                        android:id="@+id/cardImg"
+                        android:layout_width="@dimen/card_img_width"
+                        android:layout_height="@dimen/card_img_height"
+                        android:contentDescription="@string/imagecontent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/use_my_card" />
+
+                    <LinearLayout
+                        android:id="@+id/cardImgBack"
+                        android:layout_width="@dimen/card_img_width"
+                        android:layout_height="@dimen/card_img_height"
+                        android:background="@drawable/card_white"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/barcodeLayout"
+                            android:layout_width="@dimen/barcode_img_width"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/viewRewards"
+                            android:layout_alignRight="@+id/viewRewards"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal" >
+
+                            <ProgressBar
+                                android:id="@+id/QRpb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/QRCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitCenter" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/userCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/scanRegisterText"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp" />
+
+                        <LinearLayout
+                            android:id="@+id/home_card_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/btn_rounded_orange"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/home_card_refresh_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/refresh_img" />
+
+                            <TextView
+                                android:id="@+id/home_card_btn_refresh"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="REFRESH CODE" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardLayout"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btnBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_green_selector"
+                    android:padding="10dp"
+                    android:text="Balance $0.00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btnLayout" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/mainPageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/imagecontent"
+        android:src="@drawable/main_page_logo"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainPageLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2.5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/homeRewardsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="2.5dp"
+                android:contentDescription="@string/imagecontent"
+                android:src="@drawable/main_pg_my_dough" />
+
+            <ImageView
+                android:id="@+id/homeLocationsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2.5dp"
+                android:contentDescription="@string/imagecontent"
+                android:src="@drawable/main_pg_order" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2.5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/homeAddPointBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="2.5dp"
+                android:contentDescription="@string/imagecontent"
+                android:src="@drawable/main_pg_scan" />
+
+            <ImageView
+                android:id="@+id/homeReferFriendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2.5dp"
+                android:contentDescription="@string/imagecontent"
+                android:src="@drawable/main_pg_spread_love" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_top_height"
+        android:contentDescription="@string/imagecontent"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_top" />
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/imagecontent"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo_text" />
+
+    <ImageView
+        android:id="@+id/home_profile_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/logo_img"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/imagecontent"
+        android:scaleType="fitStart"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home_profile_photo"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/home_profile_photo"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/home_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Good Morning!" />
+
+        <TextView
+            android:id="@+id/home_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Rita!" />
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/bgMainPB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" >
+
+        <ProgressBar
+            android:id="@+id/mainPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner" />
+    </RelativeLayout>
+    -->
+
+</RelativeLayout>

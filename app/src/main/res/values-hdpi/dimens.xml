@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Slide Image -->
+    <dimen name="viewpager_padding">60dp</dimen>
+    <dimen name="viewpager_margin">15dp</dimen>
+    <dimen name="btn_leftRight_width">20dp</dimen>
+</resources>

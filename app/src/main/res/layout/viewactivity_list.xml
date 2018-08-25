@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="#0fff"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/viewactivity_list_text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/viewactivity_list_text_date_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/viewactivity_list_text_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:scrollHorizontally="true" />
+
+            <TextView
+                android:id="@+id/viewactivity_list_text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/viewactivity_list_text_help" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="4dp" -->
+        <!-- android:background="@drawable/activity_help" -->
+        <!-- android:visibility="gone" -->
+        <!-- android:layout_weight="1"/> -->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_orange_dark"/>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:background="@drawable/gkk_line"
+        android:contentDescription="@string/imagecontent"
+        android:visibility="visible" />
+
+</RelativeLayout>

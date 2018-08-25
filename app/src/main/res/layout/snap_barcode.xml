@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main_background" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/snap_barcode_relative_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="SNAP BARCODE"
+        android:textColor="@color/white"
+        android:textSize="15dp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/snap_barcode_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snap_barcode_relative_header"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/top_line_divider" />
+
+    <ImageView
+        android:id="@+id/snap_barcode_sb_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snap_barcode_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/snap_barcoode_button" />
+
+    <LinearLayout
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/snap_barcode_sb_button"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dots_right" />
+
+        <TextView
+            android:id="@+id/pageTitle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text=" Or "
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dots_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/snap_barcode_linear_parent"
+        android:layout_below="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/snap_barcode_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_edit_email"
+                android:background="@drawable/form_field"
+                android:gravity="center_horizontal|bottom"
+                android:hint="Type barcode number"
+                android:imeOptions="actionDone"
+                android:maxLength="200"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/snap_barcode_enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snap_barcode_linear_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/enter_button" />
+
+</RelativeLayout>

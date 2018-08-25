@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_img_height"
+        android:background="@drawable/header_img_activity" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header_img">
+
+
+        <LinearLayout
+            android:id="@+id/viewactivity_linear_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/viewactivity_text_activity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_check_left_white"
+                android:gravity="center"
+                android:text="ACTIVITY" />
+
+
+            <Button
+                android:id="@+id/viewactivity_text_claimed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_check_right_transparent"
+                android:gravity="center"
+                android:text="REDEEMED" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/viewactivity_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/viewactivity_linear_settings"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layout_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orange_light_color"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/view_activity_adapter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_ten"
+                    android:paddingLeft="@dimen/padding_ten"
+                    android:paddingRight="@dimen/padding_ten"
+                    android:paddingTop="@dimen/padding_ten"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

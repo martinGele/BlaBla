@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_five"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/enjoy_mygodie_reward_list_parent_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_orange_nopadding_selector"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp" >
+            
+            <ImageView 
+                android:id="@+id/enjoy_mygodie_reward_list_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:scaleType="fitEnd"/>
+
+            <ImageView                 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow"/>            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+            	android:orientation="vertical">
+	            <TextView
+	                android:id="@+id/enjoy_mygodie_reward_list_text_title"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:ellipsize="end"
+	                android:maxLines="2"
+	                android:textColor="@color/white"
+	                android:textSize="16sp"
+	                android:textStyle="bold"
+	                android:paddingRight="60dp"
+	                android:text="qq" />
+	
+	            <TextView
+	                android:id="@+id/expire_text"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:textColor="@color/white"
+	                android:textSize="10sp"
+	                android:textStyle="bold"
+	                android:text="11"
+	                android:visibility="gone" />
+	            
+	           	<TextView
+		            android:id="@+id/enjoy_mygodie_reward_list_date"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/white"
+		            android:textSize="10sp"
+		            android:textStyle="bold"
+		            android:text="22" />
+	            
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

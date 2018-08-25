@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp" >
+
+    <TextView
+        android:id="@+id/snap_selectlocation_list_text_name"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="0dp"
+        android:text="@string/eatatzoes"
+        android:textColor="@color/faqorange_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/snap_selectlocation_list_text_cellnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/hours_bg"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:singleLine="true"
+        android:text="@string/eatatzoes"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/snap_selectlocation_list_text_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/camera_icon"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/snap_selectlocation_list_text_address"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="6dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="@string/eatatzoes"
+        android:textColor="@color/dark_grey_text"
+        android:visibility="gone"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/snap_selectlocation_list_text_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:singleLine="true"
+        android:text="@string/eatatzoes"
+        android:textColor="@color/dark_grey_text"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_img_height">100dp</dimen> <!-- 140dp -->
+
+    <dimen name="home_top_height">400dp</dimen>
+    <dimen name="home_top_space_height">190dp</dimen>
+    <dimen name="reward_title_width">300dp</dimen>
+    <dimen name="reward_title_height">120dp</dimen>
+    <dimen name="reward_title_margin_right">60dp</dimen>
+    <dimen name="meter_img_size">300dp</dimen>
+    <dimen name="meter_img_margin_top">50dp</dimen>
+    <dimen name="meter_img_margin_right">60dp</dimen>
+    <dimen name="oven_img_size">250dp</dimen>
+    <dimen name="oven_img_margin_top">100dp</dimen>
+    <dimen name="card_img_width">480dp</dimen>
+    <dimen name="card_img_height">300dp</dimen>
+    <dimen name="barcode_img_width">440dp</dimen>
+
+    <dimen name="header_font_size">30dp</dimen> <!-- 40dp -->
+
+
+</resources>
